@@ -37,7 +37,8 @@ warnings.filterwarnings("ignore")
 
 st.set_page_config(layout="wide")
 ########################################
-df=pd.read_excel('/Users/golpira/Python/Projects/Statistical_App/My_Dataset.xlsx')
+url='https://github.com/golpiraelmi/StatisticalAnalysisApp/raw/refs/heads/main/data/My_Dataset.xlsx'
+df=pd.read_excel(url, engine='openpyxl')
 # ########################################
 columns = ['Calgary_Edmonton','Age', 'Sex','In Person','Online', 'Hours', 'Group', 'Math Score', 'Literature Score'] 
 
